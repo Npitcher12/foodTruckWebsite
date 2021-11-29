@@ -1,0 +1,82 @@
+body {
+	margin-top: 10px;
+	background: #E7ECEF;
+}
+
+/* css for menu links */
+a:link {
+  color: #FF0600;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #FF0600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+#truckHours {
+	margin: 100px;
+}
+
+#hoursList {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+
+#googleMap {
+	display: flex;
+	flex-direction: row;
+}
+
+.hourText {
+	vertical-align: middle;
+}
+
+#directionButton {
+	padding: 8px;
+	border-radius: 5px;
+	background-color: #EB3F14;
+	width: 150px;
+	font-weight: bold;
+}
+
+#directionButton:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+iframe {
+	margin: 100px;
+}
+
+/* css for menu */
+#top {
+	display: grid;
+	grid-template-columns: 20% 20% 20% 20% 20%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+    background: #1F1F1F;
+    height: 30px;
+    padding: 10px;
+    vertical-align: middle;
+    font-family: font;
+	font-weight: bold;
+	font-size: 18px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#1F1F1F;
+}
