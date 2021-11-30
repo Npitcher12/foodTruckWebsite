@@ -65,7 +65,7 @@ a:active {
 
 #about {
 	box-sizing: content-box;
-	margin-left: 110%;
+	margin-left: 200px;
 	display: inline-block;
     width: auto; 
     height: 100px;
