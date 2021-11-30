@@ -1,6 +1,7 @@
 body {
 	margin-top: 10px;
 	background: #E7ECEF;
+	overflow: auto;
 }
 
 /* css for menu links */
@@ -26,12 +27,14 @@ a:active {
 
 #truckHours {
 	margin: 100px;
+	margin-left: 400px;
 }
 
 #hoursList {
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
+	font-size: 32px;
 }
 
 #googleMap {
@@ -39,16 +42,59 @@ a:active {
 	flex-direction: row;
 }
 
+#directions {
+	display: flex;
+	flex-direction: row;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+	
+}
+
+#direction {
+	margin-left: 10%;
+}
+
+#directionHeader {
+	font-size: 32px;
+}
+
+.directionText {
+	font-size: 21px;
+}
+
+#about {
+	box-sizing: content-box;
+	margin-left: 110%;
+	display: inline-block;
+    width: auto; 
+    height: 100px;
+	padding-left: 50px;
+}
+
+#photo { 
+	font-size: 64px;
+	margin-top: 500px;
+}
+
+#review {
+	font-size: 64px;
+	margin-top: 100px;
+}
+
 .hourText {
 	vertical-align: middle;
 }
 
 #directionButton {
+	margin-top: 20px;
 	padding: 8px;
 	border-radius: 5px;
 	background-color: #EB3F14;
-	width: 150px;
+	width: 300px;
+	height: 50px;
 	font-weight: bold;
+	font-size: 24px;
 }
 
 #directionButton:hover {
@@ -56,8 +102,81 @@ a:active {
   cursor: pointer;
 }
 
+#createReview:hover {
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#createReview {
+	margin-top: 20px;
+	padding: 8px;
+	border-radius: 5px;
+	background-color: #EB3F14;
+	width: 300px;
+	height: 50px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#createPhoto:hover {
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#createPhoto {
+	margin-top: 20px;
+	padding: 8px;
+	border-radius: 5px;
+	background-color: #EB3F14;
+	width: 300px;
+	height: 50px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
 iframe {
 	margin: 100px;
+}
+
+#HourHeader { font-size: 98px; }
+
+div.imagetiles div.col-lg-3.col-md-3.col-sm-3.col-xs-6{
+	padding: 0px;
+  }
+.imagetiles {
+	width: 100%;
+}
+
+#menu {
+	font-size: 64px;
+	margin-top: 100px;
+	margin-left: 50%;
+}
+
+#order {
+	font-size: 64px;
+	margin-top: 100px;
+	margin-left: 50%;
+}
+
+.foodLink:link {
+	color: #FF0600;
+	text-decoration: none;
+}
+  
+.foodLink:visited {
+	color: #FF0600;
+	text-decoration: none;
+}
+  
+.foodLink:hover {
+	color: #000000;
+	text-decoration: none;
+}
+  
+.foodLink:active {
+	color: #000000;
+	text-decoration: none;
 }
 
 /* css for menu */
@@ -71,7 +190,8 @@ iframe {
 	text-align: center;
     background: #1F1F1F;
     height: 30px;
-    padding: 10px;
+    padding: 20px;
+	padding-bottom: 40px;
     vertical-align: middle;
     font-family: font;
 	font-weight: bold;
@@ -79,4 +199,30 @@ iframe {
 	border-width:1px;
 	border-style:solid;
 	border-color:#1F1F1F;
+}
+
+.menuItem {
+	border-width:1px;
+	border-style:solid;
+	border-color:#111111;
+	width: 500px;
+	height: 500px;
+	background-color: #1F1F1F;
+}
+
+.menuTitle {
+	text-align: center;
+	color: #FF0600;
+}
+
+.menuPicture {
+	margin-top: 10px;
+	width: 500px; 
+	height: 400px;
+}
+
+.menuPrice {
+	margin-top: 10px;
+	text-align: center;
+	color: #FF0600;
 }

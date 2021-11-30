@@ -1,7 +1,10 @@
 <html>
 	<head>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Pollo Asados</title>
 	</head>
 <body>
@@ -17,9 +20,9 @@
 		
 		<br>
 		<div id="googleMap">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1770.3288195370137!2d-82.54664557310262!3d27.44877847724216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1sen!2sus!4v1637244955992!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1770.3288195370137!2d-82.54664557310262!3d27.44877847724216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1sen!2sus!4v1637244955992!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 		<div id="truckHours">
-			<h1><u>Hours</u></h1>
+			<div id="HourHeader">Hours</div>
 			<ul id="hoursList">
 				<li>Mon <b class="hourText">Closed</b></li>
 				<li>Tues <b class="hourText">Closed</b></li>
@@ -32,8 +35,66 @@
 			<button id="directionButton">Directions</button>
 		</div>
 		</div>
-
-	
+		<div id="directions" class="container">
+			<div id="direction">
+				<h1 id="directionHeader">Directions</h1>
+				<p class="directionText">We are located across the street from checkers.
+					Right behind the old CVS.
+					Look for the red truck.
+				</p>
+			</div>
+			<div id="about">
+				<h1 id="directionHeader">About</h1>
+				<p class="directionText">We have been in the same spot for the last ten years</p>
+				<p class="directionText">We have always provided good food to our customers</p>
+			</div>
+		</div>
+		<div id="photos">
+			<div id="photo">Photos</div>
+			<div class="container-fluid">
+				<div class="row imagetiles">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+		<button id="createPhoto">Create Photo</button>
+		<div id="reviews">
+			<div id="review">Reviews</div>
+			<div class="container">
+				<div class="row imagetiles">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+					</div>
+				</div>
+			</div>
+			<button id="createReview">Create Review</button>
+		</div>
 	</body>
 </html>
 <script src="js/index.js"></script>
+
+<!-- jQuery library col-lg-3 col-md-3 col-sm-3 col-xs-6-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
