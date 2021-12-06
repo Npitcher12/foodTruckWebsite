@@ -2,6 +2,7 @@
 	<head>
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +11,7 @@
 <body>
 		<!-- Menu Bar -->
 		<div id="top">
-		 <a href="index.html">Logo</a>
+		 <a href="index.html"><div style="color: red;">This is not the website for the food truck this is a student project</div><br></a>
 		 <a href="index.html">Home</a>
 		 <a href="Menu.html">Menu</a>
 		 <a href="Order.html">Order</a>
@@ -19,8 +20,10 @@
 		
 		
 		<br>
+		<!-- Google Map iFrame -->
 		<div id="googleMap">
 		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1770.3288195370137!2d-82.54664557310262!3d27.44877847724216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgoogle%20maps!5e0!3m2!1sen!2sus!4v1637244955992!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		<!-- Hours -->
 		<div id="truckHours">
 			<div id="HourHeader">Hours</div>
 			<ul id="hoursList">
@@ -32,9 +35,10 @@
 				<li>Sat <b>12-6</b></li>
 				<li>Sun <b>12-6</b></li>
 			</ul>
-			<button id="directionButton">Directions</button>
+			<a class="button" id="directionButton" href="https://www.google.com/maps/search/google+maps/@27.4492359,-82.5465386,18z?hl=en">Directions</a>
 		</div>
 		</div>
+		<!-- Hours and About section -->
 		<div id="directions" class="container">
 			<div id="direction">
 				<h1 id="directionHeader">Directions</h1>
@@ -49,45 +53,100 @@
 				<p class="directionText">We have always provided good food to our customers</p>
 			</div>
 		</div>
+		<!-- Photos -->
 		<div id="photos">
 			<div id="photo">Photos</div>
 			<div class="container-fluid">
 				<div class="row imagetiles">
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+						<img src="img/foodTruck.jpg" class="img-responsive">
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+						<img src="img/steakTaco.jpg" class="img-responsive">
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+						<img src="img/chickenTostada.jpg" class="img-responsive">
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+						<img src="img/menu.jpg" class="img-responsive">
 					</div>
 				</div>
 			</div>
 		</div>
-		<button id="createPhoto">Create Photo</button>
+		<button onclick="photoPopup()" id="createPhoto">Create Photo</button>
+		<!-- Reviews -->
 		<div id="reviews">
 			<div id="review">Reviews</div>
 			<div class="container">
 				<div class="row imagetiles">
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+						<div class="reviewItem">
+							<div class="reviewTitle">Review</div>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span><br>
+							<div class="reviewText">Great Food Great People</div>
+						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+						<div class="reviewItem">
+							<div class="reviewTitle">Review</div>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg"></span><br>
+							<div class="reviewText">Food was good, try the steak tacos</div>
+						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						<img src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive">
+						<div class="reviewItem">
+							<div class="reviewTitle">Review</div>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span>
+							<span class="fa fa-star fa-lg checked"></span><br>
+							<div class="reviewText">Very good taco truck, make sure to bring cash</div>
+						</div>
 					</div>
 				</div>
 			</div>
-			<button id="createReview">Create Review</button>
+			<button id="createReview" onclick="reviewPopup()">Create Review</button>
+		</div>
+		<!-- Photo and Review Popups -->
+		<div id=photoPopup>
+			<div class="photoContainer" style="">
+				<form action="">
+					<label for="addphoto">Add Photo:</label><br>
+					<button type="button" id="addphoto">Add Photo</button><br>
+					<label for="fname">First name:</label><br>
+					<input type="text" id="fname" name="fname" value=""><br>
+					<label for="lname">Last name:</label><br>
+					<input type="text" id="lname" name="lname" value=""><br><br>
+					<button type="button" onclick="photoPopupClose()">Close</button>
+					<button type="button" onclick="photoPopupClose()">Create</button>
+				</form>
+		    </div>
+		</div>
+		<div id=reviewPopup>
+			<div class="reviewContainer" style="">
+				<form action="">
+					<label for="addphoto">Add Photo:</label><br>
+					<button type="button" id="addphoto">Add Photo</button><br>
+					<span class="fa fa-star fa-lg star1" onclick="checkStars('star1')"></span>
+					<span class="fa fa-star fa-lg star2" onclick="checkStars('star2')"></span>
+					<span class="fa fa-star fa-lg star3" onclick="checkStars('star3')"></span>
+					<span class="fa fa-star fa-lg star4" onclick="checkStars('star4')"></span>
+					<span class="fa fa-star fa-lg star5" onclick="checkStars('star5')"></span><br>
+					<label for="review">Review:</label><br>
+					<input type="text" id="review" name="review" value=""><br>
+					<button type="button" onclick="reviewPopupClose()">Close</button>
+					<button type="button" onclick="reviewPopupClose()">Create</button>
+				</form>
+		    </div>
 		</div>
 	</body>
 </html>
