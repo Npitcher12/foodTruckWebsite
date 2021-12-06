@@ -20,7 +20,14 @@ function checkMessage() {
 	}
 }
 
+
 var email = document.getElementById('email');
 var msg = document.getElementById('message');
+
+
 email.addEventListener('keyup', checkEmail, false);
 msg.addEventListener('keyup', checkMessage, false);
+
+
+
+

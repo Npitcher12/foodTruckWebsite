@@ -23,25 +23,45 @@
 				<div class="row imagetiles">
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
 						<div class="foodItem">
-							<h1><a class="foodLink" href="">Steak Tacos 1/$1.50</a></h1>
+							<h1><a class="foodLink" id="steakTacos" onclick="showFood('img/steakTaco.jpg')">Steak Tacos 1/$1.50</a></h1>
 							<p>Corn Tortilla with shredded steak, grilled onions, cilantro, and cheese.
+								Garnished with Lime
+							</p>
+						</div>
+						<div class="foodItem">
+							<h1><a class="foodLink" id="chickenTacos" onclick="showFood('img/chickenTaco.jpg')">Chicken Tacos 1/$1.50</a></h1>
+							<p>Corn Tortilla with shredded chicken, grilled onions, cilantro, and cheese.
 								Garnished with Lime
 							</p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						
-					</div>
-					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
-						
+						<div class="foodItem">
+							<h1><a class="foodLink" id="steakTostada" onclick="showFood('img/steakTostada.jpg')">Steak Tostada 1/$2.00</a></h1>
+							<p>Crispy Corn Tortilla with shredded steak, rice, beans, grilled onions, and cheese.
+								Garnished with Lime
+							</p>
+						</div>
+						<div class="foodItem">
+							<h1><a class="foodLink" id="chickenTostada" onclick="showFood('img/chickenTostada.jpg')">Chicken Tostada 1/$2.00</a></h1>
+							<p>Crispy Corn Tortilla with shredded chicken, rice, beans, grilled onions, and cheese.
+								Garnished with Lime
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div id=foodPopup>
+			<div class="foodContainer" style="">
+		        <img id="foodImage" src="">
+		        <p id=foodDescription></p>
+		        <button type="button" class="btn close" onclick="closeFood()">Close</button>
+		        <button type="button" class="btn close" onclick="location.href='Order.html';">Buy More</button>
+		        <button type="button" class="btn close" onclick="closeFood()">Add to Cart</button>
+		    </div>
+		</div>
 	
 	</body>
 </html>
-<script src="js/index.js"></script>
+<script src="js/Menu.js"></script>

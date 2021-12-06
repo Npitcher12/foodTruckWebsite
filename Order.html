@@ -21,10 +21,25 @@
 			<div class="container">
 				<div class="row imagetiles">
 					<div class="col-lg-3">
-						<div class="menuItem">
-							<div class="menuTitle">Test</div>
-							<div><img class="menuPicture" src=https://i.scdn.co/image/2fd8fa0f7ef2f83691a0fb9628ee369b8e3b688e class="img-responsive" ></div>
-							<div class="menuPrice">Price</div>
+						<div class="menuItem" id="steakTacos" onclick="showFood('img/steakTaco.jpg')">
+							<div class="menuTitle">Steak Tacos</div>
+							<div><img class="menuPicture" src="img/steakTaco.jpg" class="img-responsive" ></div>
+							<div class="menuPrice">$1.50</div>
+						</div>
+						<div class="menuItem" id="chickenTacos" onclick="showFood('img/chickenTaco.jpg')">
+							<div class="menuTitle">Chicken Tacos</div>
+							<div><img class="menuPicture" src="img/chickenTaco.jpg" class="img-responsive" ></div>
+							<div class="menuPrice">$1.50</div>
+						</div>
+						<div class="menuItem" id="steakTostada" onclick="showFood('img/steakTostada.jpg')">
+							<div class="menuTitle">Steak Tostada</div>
+							<div><img class="menuPicture" src="img/steakTostada.jpg" class="img-responsive" ></div>
+							<div class="menuPrice">$2.00</div>
+						</div>
+						<div class="menuItem" id="chickenTostada" onclick="showFood('img/chickenTostada.jpg')">
+							<div class="menuTitle">Chicken Tostada</div>
+							<div><img class="menuPicture" src="img/chickenTostada.jpg" class="img-responsive" ></div>
+							<div class="menuPrice">$2.00</div>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
@@ -39,6 +54,17 @@
 				</div>
 			</div>
 		</div>
+		<div id=foodPopup>
+			<div class="foodContainer" style="">
+		        <img id="foodImage" src="">
+		        <p id=foodDescription></p>
+		        <button type="button" class="btn close" onclick="closeFood()">Close</button>
+		        <input id="quantity" type=number min=1 max=10>
+				<button onclick="increment()">+</button>
+				<button onclick="decrement()">-</button>
+		        <button type="button" class="btn close" onclick="closeFood()">Add to Cart</button>
+		    </div>
+		</div>
 	</body>
 </html>
-<script src="js/index.js"></script>
+<script src="js/Order.js"></script>
